@@ -29,7 +29,7 @@ const App = () => {
 
   return (
     <div>
-      <Navbar activeSection={activeSection} />
+      <Navbar />
       <Main />
     </div>
   );
