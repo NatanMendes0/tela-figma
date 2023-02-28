@@ -30,18 +30,7 @@ const App = () => {
   return (
     <div>
       <Navbar activeSection={activeSection} />
-      <section id="home">
-        <h1>Home Section</h1>
-      </section>
-      <section id="about">
-        <h1>About Section</h1>
-      </section>
-      <section id="services">
-        <h1>Services Section</h1>
-      </section>
-      <section id="contact">
-        <h1>Contact Section</h1>
-      </section>
+      <Main />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 function Main() {
   return (
-    <main className="bg-gray-200 min-h-screen p-4">
+    <main className="bg-primary min-h-screen p-4">
       
     </main>
   );
