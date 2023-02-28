@@ -12,6 +12,9 @@ module.exports = {
         button: "#5A189A",
         complement: "#9D4EDD"
       },
+      width: {
+        tabela: "80%",
+      }
     },
   },
   plugins: [

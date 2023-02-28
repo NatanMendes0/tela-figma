@@ -53,7 +53,7 @@ export default function Navbar() {
                   <Disclosure.Button className="inline-flex items-center rounded-md p-1 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset active:ring-complement">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
-                      <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                      <XMarkIcon className="block h-8 w-8" aria-hidden="true" />
                     ) : (
                       <Bars3Icon className="block h-8" aria-hidden="true" />
                     )}
