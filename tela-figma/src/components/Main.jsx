@@ -28,7 +28,7 @@ function Main() {
   }
 
   return (
-    <main className="p-6">
+    <main className="flex-1 p-6">
       <div className="m-10">
         <div className="ml-28">
           <h1 className="text-4xl text-white">{saudacao}</h1>

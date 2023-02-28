@@ -4,7 +4,7 @@ import {
   Bars3Icon,
   BellIcon,
   XMarkIcon,
-  MagnifyingGlassCircleIcon,
+  Squares2X2Icon,
   MagnifyingGlassIcon,
 } from "@heroicons/react/24/outline";
 import { PlusIcon } from "@heroicons/react/20/solid";
