@@ -10,7 +10,8 @@ module.exports = {
         primary: "#181820",
         secondary: "#21212B",
         button: "#5A189A",
-        complement: "#9D4EDD"
+        complement: "#9D4EDD",
+        sidebarActive: "#E0AAFF"
       },
       width: {
         tabela: "80%",

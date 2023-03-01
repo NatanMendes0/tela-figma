@@ -1,20 +1,27 @@
 import React from "react";
+import { BookOpenIcon, UserIcon } from "@heroicons/react/24/solid";
 
 const Sidebar = () => {
   return (
-    <div className="bg-secondary text-white h-screen w-64 px-4 py-8">
-      <h1 className="text-l font-bold mb-4 ml-2">Groups</h1>
+    <div className="bg-secondary text-white h-full w-64 py-6">
+      <h1 className="text-2xl font-bold mb-5 p-4">Groups</h1>
       <ul>
-        <li className="mb-5 text-xl inline-flex items-center rounded-sm border-b-2 border-complement px-1 pt-1 font-medium text-white hover:bg-gray-700 hover:text-white ">
-          <a href="#" className="hover:text-gray-300">
-            Link 1
-          </a>
-        </li>
-        <li className="mb-5 text-xl text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center rounded-md px-2 py-2">
-          <a href="#" className="hover:text-gray-300">
-            Link 2
-          </a>
-        </li>
+        <button className="w-64">
+          <li className="p-4 text-xl flex bg-sidebarActive bg-opacity-10">
+            <BookOpenIcon className="flex h-8 w-8" aria-hidden="true" />
+            <a href="#" className="ml-2">
+              School
+            </a>
+          </li>
+        </button>
+        <button className="w-64">
+          <li className="p-4 text-xl flex text-gray-600 hover:bg-violet-500 hover:text-white">
+            <UserIcon className="flex h-8 w-8" aria-hidden="true" />
+            <a href="#" className="ml-2">
+              Personal
+            </a>
+          </li>
+        </button>
       </ul>
     </div>
   );

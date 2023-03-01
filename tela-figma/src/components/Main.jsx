@@ -44,8 +44,8 @@ function Main() {
           )}
         </div>
         <div className="ml-28 mt-8 p-1">
-            <a href="/" className="inline-flex items-center rounded-sm border-b-2 border-complement px-1 pt-1 text-sm font-medium text-white hover:bg-gray-700 hover:text-white">Daily Overview</a>
-            <a href="/" className="iinline-flex items-center rounded-sm p-1 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset active:ring-complement">Statistics</a>
+            <a href="/" className="inline-flex items-center rounded-sm p-3 border-b-2 border-complement text-sm font-medium text-white hover:bg-gray-700 hover:text-white">Daily Overview</a>
+            <a href="/" className="inline-flex items-center rounded-sm p-3 ml-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset active:ring-complement">Statistics</a>
         </div>          
         <div className="ml-24 mt-4 w-tabela h-96 grid grid-cols-3 grid-rows-2 gap-4">          
           <div className="bg-secondary rounded-2xl"><div className="text-white pl-5 pt-2">Titúlo 1</div></div>

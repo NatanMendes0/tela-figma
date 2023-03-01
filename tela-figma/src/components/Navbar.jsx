@@ -34,7 +34,7 @@ export default function Navbar() {
     <Disclosure as="nav" className="bg-secondary">
       {({ open }) => (
         <>
-          <div className="mx-aut px-4 sm:px-6 lg:px-0">
+          <div className="mx-aut px-4 sm:px-6 lg:px-2 py-1">
             <div className="flex h-11 justify-between">
               <div className="flex">
                 <div className="-ml-2 mr-2 flex items-center md:hidden ">
