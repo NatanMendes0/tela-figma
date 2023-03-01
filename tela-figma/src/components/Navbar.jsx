@@ -4,10 +4,13 @@ import {
   Bars3Icon,
   BellIcon,
   XMarkIcon,
-  Squares2X2Icon,
   MagnifyingGlassIcon,
 } from "@heroicons/react/24/outline";
-import { PlusIcon } from "@heroicons/react/20/solid";
+import {
+  PlusIcon,
+  NewspaperIcon,
+  SquaresPlusIcon,
+} from "@heroicons/react/20/solid";
 
 const user = {
   name: "Tom Cook",
@@ -16,8 +19,8 @@ const user = {
     "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
 };
 const navigation = [
-  { name: "Dashboard", href: "#", current: false },
-  { name: "Current page", href: "#", current: true },
+  { name: "Dashboard", href: "#", icon: NewspaperIcon, current: false },
+  { name: "Current page", href: "#", icon: SquaresPlusIcon, current: true },
 ];
 const userNavigation = [
   { name: "Seu perfil", href: "#" },
@@ -42,9 +45,15 @@ export default function Navbar() {
                   <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
-                      <XMarkIcon className="block h-6 w-6 transition-all" aria-hidden="true" />
+                      <XMarkIcon
+                        className="block h-6 w-6 transition-all"
+                        aria-hidden="true"
+                      />
                     ) : (
-                      <Bars3Icon className="block h-6 w-6 transition-all" aria-hidden="true" />
+                      <Bars3Icon
+                        className="block h-6 w-6 transition-all"
+                        aria-hidden="true"
+                      />
                     )}
                   </Disclosure.Button>
                 </div>
