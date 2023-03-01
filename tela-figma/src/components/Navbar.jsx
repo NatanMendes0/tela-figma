@@ -32,6 +32,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+
 export default function Navbar() {
   return (
     <Disclosure as="nav" className="bg-secondary">
@@ -62,14 +63,14 @@ export default function Navbar() {
                   <Disclosure.Button className="inline-flex items-center rounded-md p-1 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset active:ring-complement">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
-                      <XMarkIcon className="block h-8 w-8" aria-hidden="true" />
+                      <XMarkIcon className="block h-8" aria-hidden="true" />
                     ) : (
                       <Bars3Icon className="block h-8" aria-hidden="true" />
                     )}
                   </Disclosure.Button>
 
                   {/* Navbar */}
-                  {navigation.map((item) => (
+                  {/* {navigation.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
@@ -83,7 +84,18 @@ export default function Navbar() {
                     >
                       {item.name}
                     </a>
-                  ))}
+                  ))} */}
+
+                  <div className="flex items-center md:space-x-3">
+                    <span className="inline-flex items-center text-sm font-medium rounded-md p-1 text-gray-400 hover:bg-gray-700 hover:text-white">
+                      <SquaresPlusIcon className="h-6 w-6" aria-hidden="true" />
+                      <a href="#" className="p-2"> Dashboard </a>
+                    </span>
+                    <span className="inline-flex items-center text-sm font-medium rounded-t-md p-1 text-gray-400 hover:bg-gray-700 hover:text-white border-b-4 border-complement">
+                      <NewspaperIcon className="h-6 w-6" aria-hidden="true" />
+                      <a href="#" className="p-2"> Current Page </a>
+                    </span>
+                  </div>
                 </div>
               </div>
               <div className="flex items-center">
@@ -140,8 +152,9 @@ export default function Navbar() {
                                 )}
                               >
                                 {item.name}
-                              </a>
+                              </a>  
                             )}
+                            
                           </Menu.Item>
                         ))}
                       </Menu.Items>

@@ -7,7 +7,7 @@ const Sidebar = () => {
       <h1 className="text-2xl font-bold mb-5 p-4">Groups</h1>
       <ul>
         <button className="w-64">
-          <li className="p-4 text-xl flex bg-sidebarActive bg-opacity-10">
+          <li className="p-4 text-xl border-l-4 border-complement flex bg-sidebarActive bg-opacity-10">
             <BookOpenIcon className="flex h-8 w-8" aria-hidden="true" />
             <a href="#" className="ml-2">
               School

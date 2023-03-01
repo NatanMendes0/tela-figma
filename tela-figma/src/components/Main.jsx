@@ -12,6 +12,12 @@ function Main() {
     localStorage.setItem("string", string || "");
     window.location.reload();
   };
+
+  const setStringVazia = (string) => {
+    localStorage.setItem("string", string || "");
+    window.location.reload();
+  };
+
   const [stringArmazenada, setStringArmazenada] = useState(
     localStorage.getItem("string") || ""
   );
@@ -33,13 +39,21 @@ function Main() {
         <div className="ml-28">
           <h1 className="text-4xl text-white">{saudacao}</h1>
           {stringArmazenada ? (
-            <h2 className="text-5xl text-white mt-3">{stringArmazenada}</h2>
+            <h2 className="text-5xl text-white mt-3">{stringArmazenada}!</h2>
           ) : (
             <button
               className="bg-button hover:bg-purple-700 active:bg-purple-800 text-white font-bold mt-3 py-2 px-4 rounded-full"
               onClick={armazenarString}
             >
-              Click me
+              Say your name
+            </button>            
+          )}
+          {stringArmazenada && (
+            <button
+              className="bg-button hover:bg-purple-700 active:bg-purple-800 text-white text-md mt-3 py-2 px-4 rounded-full"
+              onClick={() => setStringVazia("")}
+            >
+              Clear name
             </button>
           )}
         </div>
